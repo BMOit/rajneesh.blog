@@ -153,3 +153,28 @@ hr {
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
 }
+.socials {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.socials a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  text-decoration: none;
+  color: #4b5563; /* gray-600 */
+  font-size: 0.75rem;
+}
+
+.socials a:hover {
+  color: #111827; /* gray-900 */
+}
+
+.socials svg {
+  width: 28px;
+  height: 28px;
+  stroke-width: 1.8;
+}
