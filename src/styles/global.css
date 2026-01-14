@@ -199,7 +199,7 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 0.75rem;
-  margin: 3rem 0;
+  margin: 1.5rem 0 2rem;
 }
 
 .photo-strip img {
@@ -232,4 +232,10 @@ a {
 .photo-gallery img:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.hero img {
+  max-height: 420px;
+  object-fit: cover;
+  filter: brightness(0.95) contrast(0.95);
 }
