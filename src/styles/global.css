@@ -163,9 +163,13 @@ hr {
   margin: 0;
 }
 
+.site-title {
+  margin-top: 2rem;
+}
+
 .site-subtitle {
   margin-top: -1.25rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-size: 1rem;
   color: #6b7280;
 }
@@ -177,6 +181,19 @@ hr {
 a {
   text-decoration-color: #6366f1; 
 }
+
+@media (max-width: 640px) {
+  .footer-nav {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer {
+  margin-top: 8rem;               
+  padding-top: 2.5rem;
+  border-top: 1px solid rgb(var(--gray-light));
+}
+
 .footer-nav {
   display: flex;
   justify-content: space-between; 
@@ -197,12 +214,9 @@ a {
 }
 
 .footer-nav a:hover {
-  color: #111827;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.footer-nav a:hover {
-  transform: translateY(-2px);
+	color: #111827;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+	transform: translateY(-2px);
 }
 
 .photo-strip {
