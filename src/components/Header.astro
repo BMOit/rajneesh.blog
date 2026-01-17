@@ -5,7 +5,9 @@ import HeaderLink from './HeaderLink.astro';
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<h2><a href="/" class="site-title">
+			<img src="/src/bmo.svg" alt="BMO logo" />
+		</a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
@@ -49,6 +51,21 @@ import HeaderLink from './HeaderLink.astro';
 		background: white;
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
 	}
+	.site-header {
+		display: flex;
+		align-items: center;
+	}
+
+	.site-title {
+		display: flex;
+		align-items: center;
+	}
+
+	.site-title img {
+		height: 30px;
+		display: block;
+	}
+
 	h2 {
 		margin: 0;
 		font-size: 1em;
