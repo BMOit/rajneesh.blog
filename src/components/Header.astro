@@ -1,12 +1,13 @@
 ---
 import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
+import Logo from '../bmo.svg';
 ---
 
 <header>
 	<nav>
 		<h2><a href="/" class="site-title">
-			<img src="/src/bmo.svg" alt="BMO logo" />
+			<Logo class="logo-img" aria-label="BMO logo" />
 		</a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
@@ -59,6 +60,12 @@ import HeaderLink from './HeaderLink.astro';
 	.site-title {
 		display: flex;
 		align-items: center;
+	}
+
+	.logo-img {
+		width: 70px;
+		height: 40px;
+		display: block;
 	}
 
 	.site-title img {
