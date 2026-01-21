@@ -1,5 +1,5 @@
 {
-  "name": "@example/blog",
+  "name": "rajneesh-blog",
   "type": "module",
   "version": "0.0.1",
   "private": true,
@@ -13,8 +13,10 @@
     "@astrojs/mdx": "^4.3.13",
     "@astrojs/rss": "^4.0.14",
     "@astrojs/sitemap": "^3.6.1",
+    "@tailwindcss/vite": "^4.1.18",
     "@vercel/analytics": "^1.6.1",
     "astro": "^5.16.7",
-    "sharp": "^0.34.3"
+    "sharp": "^0.34.3",
+    "tailwindcss": "^4.1.18"
   }
 }
