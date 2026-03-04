@@ -43,7 +43,7 @@ body {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(var(--gray-dark));
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 1.7;
 }
 main {
@@ -217,10 +217,11 @@ a {
 
 .footer-nav {
   display: flex;
-  justify-content: space-between; 
-  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
 
-  max-width: 900px;  
+  max-width: 900px;
   margin: 3rem auto 0;
   padding: 0 1rem;
 
@@ -232,6 +233,7 @@ a {
   text-decoration: underline;
   text-underline-offset: 4px;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .footer-nav a:hover {
