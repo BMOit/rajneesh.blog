@@ -1,3 +1,4 @@
+
 // @ts-check
 
 import mdx from '@astrojs/mdx';
@@ -9,6 +10,9 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
 	site: 'https://rajneesh.blog',
 	integrations: [mdx(), sitemap()],
+	devToolbar: {
+		enabled: false,
+	},
 	vite: {
 		plugins: [tailwindcss()],
 	},
